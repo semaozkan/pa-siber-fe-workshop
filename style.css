@@ -28,12 +28,6 @@ nav{
     align-items: center;
 }
 
-main{
-    width: 100%;
-    height: calc(100% - 90px);
-    background-color: red;
-}
-
 .logo-container{
     font-size: 48px;
     font-weight: 700;
@@ -50,11 +44,153 @@ main{
     margin-right: 20px;
     color: #fff;
     text-transform: capitalize;
+    border: none;
+    transition: .2s all ease-in-out;
+}
+
+.nav-container ul .nav-link:hover{
+    border-bottom: 1px solid white;
+
 }
 
 .nav-container ul .nav-link:last-child {
     margin-right: 0;
 
 }
+
+main{
+    width: 100%;
+    height: calc(100% - 90px);
+    background-color: #FFDD55;
+    padding: 75px 150px 75px 30px;
+}
+
+main .main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+main .main-container .main-infos-content{
+    width: calc(100% - 500px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .main-container .main-infos-content .text-content{
+    margin-bottom: 50px;
+    margin-top: -200px;
+}
+
+main .main-container .main-infos-content .text-content h2{
+    margin-bottom: 12px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+main .main-container .main-infos-content .text-content span{
+    color: #474A57;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: -1;
+}
+
+main .main-container .main-infos-content .button-content{
+    display: flex;
+    gap: 20px;
+}
+
+main .main-container .main-infos-content .button-content button{
+    cursor: pointer;
+    padding: 10px 34px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    box-shadow: 4px 4px 0px 0px #eb7711bf;
+    transition: .3s all ease-in-out;
+}
+
+main .main-container .main-infos-content .button-content button:hover {
+    box-shadow: -4px -4px 0px 0px #eb7711bf;
+    animation: shake .3s 2 linear;
+    
+    
+}
+
+main .main-container .main-image{
+    width: 500px;
+    
+}
+
+main .main-container .main-image img {
+    border-radius: 12px;
+}
+
+.social-container {
+    position: absolute;
+    right: 25px;
+    top: 40%;
+
+}
+
+.social-container a .social-item{
+    font-size: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.social-container a .social-item.instagram:hover{
+    background-color: #E4405F;
+    color: white;
+}
+
+.social-container a .social-item.twitter:hover{
+    background-color: #1DA1F2;
+    color: white;
+}
+
+.social-container a .social-item.github:hover{
+    background-color: #171515;
+    color: white;
+}
+
+.social-container a .social-item.linkedin:hover{
+    background-color: #0A66C2;
+    color: white;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+
+    }
+
+}
+
+
+
 
 
