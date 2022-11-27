@@ -45,7 +45,7 @@ nav{
     color: #fff;
     text-transform: capitalize;
     border: none;
-    transition: .2s all ease-in-out;
+    transition: .4s all ease-in-out;
 }
 
 .nav-container ul .nav-link:hover{
