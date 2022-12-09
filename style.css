@@ -61,7 +61,7 @@ nav{
 main{
     width: 100%;
     height: calc(100% - 90px);
-    background-color: #FFDD55;
+    background-color: pink;
     padding: 75px 150px 75px 30px;
 }
 
